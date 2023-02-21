@@ -1,0 +1,297 @@
+body{
+    background-color: whitesmoke;
+}
+.navtop{
+    height: 80px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    background-color:rgb(182, 184, 185);
+    width: 100%;
+    z-index: 1;
+}
+.nav-head{
+    margin-left: 30px;
+    letter-spacing: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(53, 54, 54);
+}
+li{
+    display: inline;
+    padding: 35px;
+}
+ul{
+    width: 450px;
+    margin-left:350px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+}
+a:hover{
+    color:black;
+}
+a{
+    color:rgb(53, 54, 54);
+}
+.about{
+    padding-top: 180px;
+    height: 500px;
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 230px;
+    padding-top: -100px;
+}
+.desc{
+    width: 650px;
+    margin-left: 240px;
+    margin-top: -250px;
+    font-size: 20px;
+    letter-spacing: 1px;   
+}
+.automotive{
+    background-image: url("a.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+    width: 100%;
+}
+.automotive,.wedding,.event{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+    transition-delay: 50ms;
+}
+.automotive:hover,.wedding:hover,.event:hover,.potrait:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.4s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-delay: 50ms;
+}
+.wedding{
+    background-image:url("wed.jpg");
+    height:300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.event{
+    background-image:url("event.jpg");
+    height:300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.direct{
+    padding-top: 200px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(31, 31, 31);
+    text-decoration: underline;
+    margin-top:5px;
+}
+a.hint:hover{
+    color: gray;
+    font-size: 19px;
+}
+.wedding-desc,.event-desc,.automotive-desc{
+    letter-spacing:50px;
+    color:black;
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+.potraits-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    letter-spacing:50px;
+    color:black;
+    font-weight: bolder;
+    text-decoration-line: underline;   
+}
+.p1{
+    background-image: url("potrait1.jpg");
+    height:300px;
+    background-attachment: fixed;
+    background-position:left;
+    background-repeat:no-repeat;
+    background-size: 450px;
+}
+.p2{
+    background-image: url("potrait2.jpg");
+    height:300px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 450px;
+    margin-top: -300px;
+}
+.p3{
+    background-image: url("potrait3.jpg");
+    height:300px;
+    background-attachment: fixed;
+    background-position:right;
+    background-repeat:no-repeat;
+    background-size: 450px;
+    margin-top: -300px;
+}
+.potraits-container,.wedding,.event{
+    margin-top: 50px;
+}
+.contact{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-list,.contact-list2{
+    display: grid;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.contact-list-li{
+    padding-left: 38px;
+    font-size: 18px;
+}
+.contact-list{
+    margin-right: 100px;
+}
+.contact-list2{
+    margin-left: 100px;
+}
+ion-icon{
+    font-size: 50px;
+    color: rgb(38, 107, 187);
+    margin-left: -150px;
+}
+
+ion-icon:hover{
+    color: black;
+}
+.cont{
+    width: 350px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 70px;
+}
+.cont:hover{
+
+    transform: scale(1.1,1.1);
+}
+.txt{
+    padding-top: 15px;  
+    position: absolute;
+    padding-left: 50px;
+}
+#opn,#cls{
+    display: none;
+}
+
+@media screen and  (max-width:1270px){
+    .navtop{
+        display: inline;
+        width:100%;
+    }
+    .nav-head{
+        letter-spacing: 25px;
+        float: left;
+        left: 0px;
+    }
+    .menu{
+        display:none;
+    } 
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-list2{
+        margin-left: 0px;
+    }
+    img{
+        width: 220px;
+        height: 220px;
+        margin-left: 110px;
+        margin-right: auto;
+        margin-top: -100px;
+        position: absolute;
+    }
+    .desc{
+        margin-top: 140px;
+        margin-left: 8px;
+        width: 460px;
+    }
+    .direct{
+        padding-top: 55px;
+    }
+    .about{
+        width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .work{
+        width: 100%;
+    }
+    #opn,#cls{
+        position: absolute;
+    }
+    #opn{
+        display: block;
+        float: right;
+        right: -60px;
+        top:16px;
+    }
+    #cls{ 
+        float: right;
+        right: -60px;
+        top:17px;
+    }
+    .menu-icon{
+        font-size: 40px;
+        color:rgb(53, 54, 54) ;
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .menu{
+        width: 100%;
+        background-color: whitesmoke;
+        position: absolute;
+        margin-top: 80px;
+        right: 0px;
+    }
+}
