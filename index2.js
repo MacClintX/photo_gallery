@@ -1,5 +1,3 @@
-
-
 function myf(){
     document.getElementById("menu").style.display="block";
     document.getElementById("cls").style.display="block";
@@ -12,17 +10,22 @@ function myf2(){
     document.getElementById("opn").style.display="block";
 }
 
-window.addEventListener('resize',function(event){
+const mediaQuery=window.matchMedia('(max-width:1270px)');
 
-    if(document.body.clientWidth>1270){
+
+function handlechange(e){
+    if(e.matches){
+        
         document.getElementById("cls").style.display="none"
         document.getElementById("opn").style.display="none"
         document.getElementById("menu").style.display="block"
+    
     }
-    if (document.body.clientWidth<1270) {
-        document.getElementById("cls").style.display="none"
+    else{
+        document.getElementById("cls").style.display="block"
         document.getElementById("opn").style.display="block"
         document.getElementById("menu").style.display="none"
-    } 
-        
-});
+    }
+}
+mediaQuery.addListener(handlechange)
+handlechange(mediaQuery)
